@@ -21,4 +21,6 @@ content: "This is a sample ofwriting content about new content"
 },
 
 ]
-export function getPostSlug(slug: string)
+export function getPostSlug(slugForPost: string) :BlogPost | undefined {
+    return posts.map()
+}
