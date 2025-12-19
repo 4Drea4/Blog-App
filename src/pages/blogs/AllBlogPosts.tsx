@@ -6,7 +6,9 @@ export default function AllBlogPosts(){
         <div className="allBlogsDiv">
             <h2>Blog</h2>
             {posts.map((post) => (
-                
+                <p key={post.id}>
+                <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+           </p>
             )
         )}
         </div>
