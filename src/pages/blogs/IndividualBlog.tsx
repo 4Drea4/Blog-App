@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { posts } from "../../models/posts";
 
-export default function BlogPostPage(){
+export default function IndividualBlog(){
     const {slug} = useParams();
 
     const lookForPost = posts.filter((post)=> 
