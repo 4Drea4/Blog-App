@@ -3,8 +3,9 @@ import { posts } from "../../models/posts";
 
 export default function BlogPostPage(){
     const {slug} = useParams();
-    const lookForPost = posts.find((post)
-=> post.slug  === slug);
+
+    const lookForPost = posts.filter((post)=> 
+        post.slug  === slug)[0];
 
 if(!lookForPost) {
     return <h2> No post found</h2>;
@@ -13,6 +14,11 @@ if(!lookForPost) {
 
 
 return (
-    
+    <div>
+        <h3>{lookForPost.title}</h3>
+        <p>{lookForPost.content}</p>
+
+
+    </div>
 )
 }
