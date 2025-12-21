@@ -10,3 +10,5 @@ Furthermore, you will implement a basic authentication system and create a “pr
 This lab will give you hands-on experience with React Router and handling URL parameters.
 
 ### Resources:
+- [Authentication](https://www.robinwieruch.de/react-router-authentication/)
+- []()

@@ -6,12 +6,16 @@ import Admin from './pages/admin/Admin';
 import Login from './pages/login/Login'
 import NotFound from './pages/NotFound/NotFound'
 import ProtectedRoute from './components/ProtectedRoutes';
+import Navbar from './components/NavBar';
+
 
 import './App.css'
 
 export default function App() {
 
   return (
+    <>
+    <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/blog' element={<AllBlogPosts/>}/>
@@ -19,10 +23,10 @@ export default function App() {
       <Route path='/blog/:slug' element={<IndividualBlog/>}/>
       <Route path="/login" element={<Login/>} />
       <Route path="*" element={<NotFound/>} />
-      
-   
-
+     
+    
     </Routes >
+    </>
   )
 }
 
