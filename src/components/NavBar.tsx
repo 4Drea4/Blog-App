@@ -10,7 +10,7 @@ export default function Navbar() {
         navigate("/");
     }
     return (
-        <nav>
+        <nav className='navbar'>
 
            <NavLink  style={({ isActive }) => ({ color: isActive ? 'purple' : 'black', })} to="/" >Home
           </NavLink>

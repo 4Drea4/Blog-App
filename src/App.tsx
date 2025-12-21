@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <>
-    <Navbar/>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/blog' element={<AllBlogPosts/>}/>
