@@ -2,7 +2,12 @@ import { useAuth } from "../../contexts/AuthContext"
 
 export default function Login(){
      const {login} = useAuth();
+     const navigate =useNavigate();
 
+    function handleLogin(){
+        login();
+        navigate("/admin")
+    }
 
     return(
     <div>
