@@ -7,7 +7,7 @@ export default function Login(){
     return(
     <div>
         <h1>Login</h1>
-        <button onClick={login}>Login </button>
+        <button onClick={()=> {console.log("login button"); login(); }}>Login </button>
     </div>
     ) 
 }

@@ -3,7 +3,9 @@ import type { AuthContextType } from "../types";
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-export function AuthProvider({children}: {children : React.ReactNode}) {
+export function AuthProvider({children}: 
+    {children : React.ReactNode}) {
+        console.log("test");
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     function login(){
