@@ -3,8 +3,10 @@ import { posts } from "../../models/posts";
 
 export default function AllBlogPosts(){
     return (
+        <>
+        <h1>Read a new Blog</h1>
         <div className="allBlogsDiv">
-            <h1>Blog</h1>
+          
             {posts.map((post) => (
                 <p key={post.id}>
                 <Link to={`/blog/${post.slug}`}>{post.title}</Link>
@@ -12,5 +14,6 @@ export default function AllBlogPosts(){
             )
         )}
         </div>
+        </>
     )
 }

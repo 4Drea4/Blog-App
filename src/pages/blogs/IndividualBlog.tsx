@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { posts } from "../../models/posts";
+import {Link} from 'react-router-dom';
 
 export default function IndividualBlog(){
     const {slug} = useParams();
@@ -14,7 +15,8 @@ if(!lookForPost) {
 
 
 return (
-    <div>
+    <div className="individual-blog">
+        <Link to='/blog' className="back">Go Back</Link>
         <h3>{lookForPost.title}</h3>
         <p>{lookForPost.content}</p>
 
