@@ -13,3 +13,4 @@ This lab will give you hands-on experience with React Router and handling URL pa
 - [Authentication](https://www.robinwieruch.de/react-router-authentication/)
 - [useNavigate](https://www.youtube.com/watch?v=LteOh-m-Nm4)
 - [Logging in and authentication and protected routes](https://www.youtube.com/watch?v=X8eAbu1RWZ4)
+- [Lorem Ipsum](https://s-kngstn.github.io/wu-loremipsum/)
